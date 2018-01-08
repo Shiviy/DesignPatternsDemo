@@ -11,18 +11,21 @@ public class MacbookBuilder extends Builder {
 
 
     @Override
-    public void buildBoard(String board) {
+    public Builder buildBoard(String board) {
         mComputer.setmBoard(board);
+        return this;
     }
 
     @Override
-    public void buildDisplay(String display) {
+    public Builder buildDisplay(String display) {
         mComputer.setmDisplay(display);
+        return this;
     }
 
     @Override
-    public void buildOS() {
+    public Builder buildOS() {
         mComputer.setmOS();
+        return this;
     }
 
     @Override
