@@ -10,8 +10,9 @@ public class Test {
         //构建器
         Builder builder = new MacbookBuilder();
         builder.buildBoard("英特尔主板").buildDisplay("Retina显示器").buildOS();
-
+        Computer macBook = builder.create();
         //构建计算机，输出显示信息
-        System.out.println("Computer Info : " + builder.create().toString());
+        System.out.println("Computer Info : " + macBook.toString());
+
     }
 }
